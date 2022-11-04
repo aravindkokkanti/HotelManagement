@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c6723b7e8d5a4556bb992a93d1113bbe" Name="Diagram1">
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblAddress" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblAddressType" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblCollection" Width="1.5" PointX="16.5" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblCustomer" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblEmploye" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblGender" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblInventry" Width="1.5" PointX="9.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblInvoice" Width="1.5" PointX="14.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblMenuItem" Width="1.5" PointX="7.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblOrderDelivery" Width="1.5" PointX="12" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblOrder" Width="1.5" PointX="9.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblProduct" Width="1.5" PointX="7.5" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELMANAGEMENTModel.tblRole" Width="1.5" PointX="5.25" PointY="13.5" IsExpanded="true" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblAddres__ADDRE__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblCustom__ADDRE__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblCustom__HOTEL__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblEmploy__ADDRE__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblCollec__INVOI__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblEmploy__CUSTO__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblInvent__CUSTO__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblMenuIt__CUSTO__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblProduc__CUSTO__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblEmploy__GENDE__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblEmploy__ROLEI__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblInvent__PRODU__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblInvoic__DELIV__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblOrders__MENUI__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="HOTELMANAGEMENTModel.FK__tblOrderD__ORDER__59FA5E80" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
