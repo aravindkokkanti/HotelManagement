@@ -1,0 +1,35 @@
+﻿@model BusinessObjects.AddressTypeModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+<form action="Create" method="post">
+    <div>
+        @Html.LabelFor(m => m.Name)
+        @Html.EditorFor(m => m.Name)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.CREATEDDATE)
+        @Html.EditorFor(m => m.CREATEDDATE)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.CREATEDBY)
+        @Html.EditorFor(m => m.CREATEDBY)
+    </div>
+    
+   
+    <div>
+        @Html.LabelFor(m => m.ISACTIVE)
+        @Html.EditorFor(m => m.ISACTIVE)
+    </div>
+
+    <div>
+        <input type="submit" value="Create AddressType" />
+    </div>
+
+</form>
+

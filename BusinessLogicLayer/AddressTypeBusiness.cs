@@ -18,6 +18,11 @@ namespace BusinessLogicLayer
             return atd.GetAllAddressTypes();
         }
 
-       
+        public void AddAddressType(AddressTypeModel atm)
+        {
+            atd.AddAddressType(atm);
+        }
+
+
     }
 }

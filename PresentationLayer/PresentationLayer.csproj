@@ -243,6 +243,7 @@
     <Content Include="Views\Gender\Create.cshtml" />
     <Content Include="Views\Gender\Edit.cshtml" />
     <Content Include="Views\AddressType\Index.cshtml" />
+    <Content Include="Views\AddressType\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -26,21 +26,13 @@ namespace PresentationLayer.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public ActionResult Create(AddressTypeModel addressTypeModel)
-        //{
-        //    AddressTypeBusiness atb = new AddressTypeBusiness();
-        //   atb.
-        //    return RedirectToAction("Index");
-        //}
-
-        //[HttpPost]
-        //public ActionResult Create(GenderModel genModel)
-        //{
-        //    GenderBusiness genderBussiness = new GenderBusiness();
-        //    genderBussiness.AddGender(genModel);
-        //    return RedirectToAction("Index");
-        //}
+        [HttpPost]
+        public ActionResult Create(AddressTypeModel addressTypeModel)
+        {
+            AddressTypeBusiness atb = new AddressTypeBusiness();
+            atb.AddAddressType(addressTypeModel);
+            return RedirectToAction("Index");
+        }
 
     }
 }
