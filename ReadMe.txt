@@ -7,3 +7,6 @@ https://www.c-sharpcorner.com/interview-question/what-is-difference-between-ntie
 https://www.c-sharpcorner.com/UploadFile/09953d/mvc-application-using-n-tier-architecture/
 
 https://www.youtube.com/watch?v=Hqj8Xxebf9Y
+
+https://www.geeksforgeeks.org/basic-crud-create-read-update-delete-in-asp-net-mvc-using-c-sharp-and-entity-framework/
+
