@@ -34,5 +34,29 @@ namespace PresentationLayer.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult Edit(int Id)
+        {
+            AddressTypeBusiness addressTypeBussiness = new AddressTypeBusiness();
+            AddressTypeModel addressTypeModel = addressTypeBussiness.GetAddressTypeById(Id);
+            return View(addressTypeModel);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(AddressTypeModel addressTypeModel)
+        {
+            AddressTypeBusiness addressTypeBussiness = new AddressTypeBusiness();
+            addressTypeBussiness.UpdateAddressType(addressTypeModel);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Delete(int Id)
+        {
+            AddressTypeBusiness addressTypeBussiness = new AddressTypeBusiness();
+            addressTypeBussiness.DeleteAddressType(Id);
+            return RedirectToAction("Index");
+        }
+
+
+
     }
 }

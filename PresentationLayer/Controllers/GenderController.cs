@@ -15,9 +15,9 @@ namespace PresentationLayer.Controllers
         {
             GenderBusiness gb = new GenderBusiness();
 
-            var genderList = gb.GetAllGenders();
+            var gender = gb.GetAllGenders();
 
-            return View(genderList);
+            return View(gender);
         }
 
         public ActionResult Create()

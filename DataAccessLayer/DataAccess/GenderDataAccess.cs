@@ -73,6 +73,7 @@ namespace DataAccess.DataAccessLayer
                 gender.Name = genderModel.Name;
                 gender.MODIFIEDDATE = DateTime.Now;
                 gender.MODIFIEDBY = 1;
+                gender.ISACTIVE = true;
                 _Context.SaveChanges();
             }
         }

@@ -23,6 +23,21 @@ namespace BusinessLogicLayer
             atd.AddAddressType(atm);
         }
 
+        public AddressTypeModel GetAddressTypeById(int addressTypeId)
+        {
+            return atd.GetAddressTypeById(addressTypeId);
+        }
+
+        public void UpdateAddressType(AddressTypeModel tbladdressType)
+        {
+            atd.UpdateAddressType(tbladdressType);
+        }
+
+        public void DeleteAddressType(int addressTypeId)
+        {
+            atd.DeleteAddressType(addressTypeId);
+        }
+
 
     }
 }

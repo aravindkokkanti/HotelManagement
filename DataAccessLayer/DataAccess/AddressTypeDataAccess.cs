@@ -47,6 +47,47 @@ namespace DataAccessLayer.DataAccess
             };
             _Context.tblAddressTypes.Add(tat);
             _Context.SaveChanges();
-        }       
+        }
+
+        public AddressTypeModel GetAddressTypeById(int addressTypeId)
+        {
+            tblAddressType addressType = _Context.tblAddressTypes.Where(x => x.Id == addressTypeId).FirstOrDefault();
+
+            AddressTypeModel addressTypeModel = new AddressTypeModel()
+            {
+                Name = addressType.Name,
+                CREATEDDATE = addressType.CREATEDDATE,
+                CREATEDBY = addressType.CREATEDBY,
+                ISACTIVE = addressType.ISACTIVE
+            };
+            return addressTypeModel;
+        }
+
+        public void UpdateAddressType(AddressTypeModel addressTypeModel)
+        {
+            var addressType = _Context.tblAddressTypes.Where(x => x.Id == addressTypeModel.Id).FirstOrDefault();
+            if (addressType != null)
+            {
+                addressType.Name = addressTypeModel.Name;
+                addressType.MODIFIEDDATE = DateTime.Now;
+                addressType.MODIFIEDBY = 1;
+                addressType.ISACTIVE = true;
+                _Context.SaveChanges();
+            }
+        }
+
+        public void DeleteAddressType(int addressTypeId)
+        {
+            var addressType = _Context.tblAddressTypes.Where(x => x.Id == addressTypeId).FirstOrDefault();
+            if (addressType != null)
+            {
+                addressType.MODIFIEDDATE = DateTime.Now;
+                addressType.MODIFIEDBY = 1;
+                addressType.ISACTIVE = false;
+                _Context.SaveChanges();
+            }
+            
+            _Context.SaveChanges();
+        }
     }
 }
