@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{16A651CF-BC01-40C0-A7E7-B4BEC127CDFE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43442D5F-81CE-49CE-806C-53D52B6CE0CE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceLinksAndcode", "ReferenceLinksAndcode", "{43442D5F-81CE-49CE-806C-53D52B6CE0CE}"
 	ProjectSection(SolutionItems) = preProject
 		ReadMe.txt = ReadMe.txt
 	EndProjectSection
