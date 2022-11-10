@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="DataAccess\AddressTypeDataAccess.cs" />
     <Compile Include="DataAccess\GenderDataAccess.cs" />
+    <Compile Include="DataAccess\RoleDataAccess.cs" />
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

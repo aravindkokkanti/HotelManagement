@@ -1,0 +1,37 @@
+﻿@model IEnumerable<BusinessObjects.RoleModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    @Html.ActionLink("Add Role", "Create")
+</div>
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.Name)</th>
+        <th>@Html.DisplayNameFor(m => m.ISACTIVE)</th>
+        <th>@Html.DisplayNameFor(m => m.CREATEDDATE)</th>
+        <th>@Html.DisplayNameFor(m => m.CREATEDBY)</th>
+        <th></th>
+    </tr>
+
+    @foreach (BusinessObjects.RoleModel roleModel in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(m => @roleModel.Name)</td>
+            <td>@Html.DisplayFor(m => roleModel.ISACTIVE)</td>
+            <td>@Html.DisplayFor(m => roleModel.CREATEDDATE)</td>
+            <td>@Html.DisplayFor(m => roleModel.CREATEDBY)</td>
+            <td>
+                @Html.ActionLink("Edit Role", "Edit", new { Id = roleModel.Id }) |
+                @Html.ActionLink("Delete Role", "Delete", new { Id = roleModel.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
