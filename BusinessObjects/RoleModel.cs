@@ -21,5 +21,6 @@ namespace BusinessObjects
         public Nullable<int> CREATEDBY { get; set; }
         public Nullable<System.DateTime> MODIFIEDDATE { get; set; }
         public Nullable<int> MODIFIEDBY { get; set; }
+
     }
 }
