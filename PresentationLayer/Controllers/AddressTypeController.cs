@@ -29,9 +29,15 @@ namespace PresentationLayer.Controllers
         [HttpPost]
         public ActionResult Create(AddressTypeModel addressTypeModel)
         {
-            AddressTypeBusiness atb = new AddressTypeBusiness();
-            atb.AddAddressType(addressTypeModel);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                AddressTypeBusiness atb = new AddressTypeBusiness();
+                atb.AddAddressType(addressTypeModel);
+                return RedirectToAction("Index");
+
+            }
+            return View();
+            
         }
 
         public ActionResult Edit(int Id)

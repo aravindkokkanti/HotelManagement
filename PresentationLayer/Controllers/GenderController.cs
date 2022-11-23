@@ -20,6 +20,7 @@ namespace PresentationLayer.Controllers
             return View(gender);
         }
 
+        
         public ActionResult Create()
         {
             return View();
@@ -28,9 +29,13 @@ namespace PresentationLayer.Controllers
         [HttpPost]
         public ActionResult Create(GenderModel genModel)
         {
-            GenderBusiness genderBussiness = new GenderBusiness();
-            genderBussiness.AddGender(genModel);
-            return RedirectToAction("Index");
+            if(ModelState.IsValid)
+            {
+                GenderBusiness genderBussiness = new GenderBusiness();
+                genderBussiness.AddGender(genModel);
+                return RedirectToAction("Index");
+            }
+            return View();
         }
 
         public ActionResult Edit(int Id)

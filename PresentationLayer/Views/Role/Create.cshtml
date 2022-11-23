@@ -7,22 +7,32 @@
 
 
 <form action="Create" method="post">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
     <div>
         @Html.LabelFor(m => m.Name)
         @Html.EditorFor(m => m.Name)
+        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
     </div>
     <div>
         @Html.LabelFor(m => m.Code)
         @Html.EditorFor(m => m.Code)
+        @Html.ValidationMessageFor(model => model.Code, "", new { @class = "text-danger" })
+
     </div>
     <div>
         @Html.LabelFor(m => m.CREATEDDATE)
         @Html.EditorFor(m => m.CREATEDDATE)
+        @Html.ValidationMessageFor(model => model.CREATEDDATE, "", new { @class = "text-danger" })
+
     </div>
 
     <div>
         @Html.LabelFor(m => m.CREATEDBY)
         @Html.EditorFor(m => m.CREATEDBY)
+        @Html.ValidationMessageFor(model => model.CREATEDBY, "", new { @class = "text-danger" })
+
     </div>
 
 

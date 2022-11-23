@@ -28,9 +28,14 @@ namespace PresentationLayer.Controllers
         [HttpPost]
         public ActionResult Create(RoleModel roleModel)
         {
-            RoleBusiness rb = new RoleBusiness();
-            rb.AddRole(roleModel);
-            return RedirectToAction("Index");
+            if(ModelState.IsValid)
+            {
+                RoleBusiness rb = new RoleBusiness();
+                rb.AddRole(roleModel);
+                return RedirectToAction("Index");
+            }
+            return View();
+            
         }
 
         public ActionResult Edit(int Id)
